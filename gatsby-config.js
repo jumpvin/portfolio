@@ -27,6 +27,15 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-cockpit`,
+      options: {
+        cockpitConfig: {
+          baseURL: 'https://vincentoliverio.com', // the url to you cockpit installation
+          accessToken: '046bfc260e1a0b9417f2984fcf936d', // you cockpit API key
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
